@@ -1,0 +1,23 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.digital-breaking {
+  font-size: 25px;
+  position: absolute;
+  top: 50%; 
+  margin-top: -20px; 
+  left: 50%; 
+  margin-left: -100px; 
+}
