@@ -11,14 +11,12 @@ import { Observable } from 'rxjs';
 })
 export class CharactersApiService {
 
-  URL_API = 'https://breakingbadapi.com/api/characters';
+  filmsUrl = 'https://breakingbadapi.com/api/characters';
 
   constructor(private http: HttpClient) { }
 
   /** metodo get para listar todos os personagens */
-  
-  getAllCharacters(): Observable<any>{
-    return this.http.get<any>(this.URL_API)
-    .pipe(map((data: any) => data.data.results))
+  listar() {
+    return this.http.get<any[]>(`${this.filmsUrl}`)
   }
 }
