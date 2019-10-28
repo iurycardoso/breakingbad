@@ -1,26 +1,35 @@
-<div fxFlex fxLayout="column">
-        <div fxLayout="row wrap">
-            <div fxFlex="25" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column"
-            *ngFor ="let personagem of allCharacters" style="padding:7px">
-                <mat-card class="card">
-                    <mat-card-header>
-                       
-                        <img mat-card-avatar [src]="personagem.img">
-                        <mat-card-title>{{personagem.name}}</mat-card-title>
-                        <mat-card-subtitle>Apelido: {{personagem.nickname}}</mat-card-subtitle>
-                    </mat-card-header>
+<div class="card-responsive" fxFlex="100" fxLayout="column">
+    <div fxLayout="row wrap">
+        <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="75" fxLayout="column"
+            *ngFor="let personagem of allCharacters" style="padding:7px">
+            <mat-card class="card">
+                <mat-card-header>
 
-                    <img mat-card-image  [src]="personagem.img">
-                    
-                   <!--<mat-card-content *ngFor="let emprego of personagem.occupation">
-                         {{emprego}}               
-                    </mat-card-content> -->
-                    
-                    <mat-card-actions>
-                        <button mat-button>LIKE</button>
-                        <button mat-button>SHARE</button>
-                    </mat-card-actions>
-                </mat-card>
-            </div>
+                    <img mat-card-avatar [src]="personagem.img">
+                    <mat-card-title>{{personagem.name}}</mat-card-title>
+                    <mat-card-subtitle>{{personagem.nickname}}</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image [src]="personagem.img">
+
+                <mat-card-content>
+
+                    <p><span><b>Profissão:&nbsp; </b> {{personagem.occupation}}</span></p>
+                    <p><span><b>Nascimento:&nbsp;</b> {{personagem.birthday}}</span></p>
+                    <p><span><b>Capitulos:&nbsp; </b> {{personagem.appearance}}</span></p>
+                    <p><span><b>Ator:&nbsp; </b> {{personagem.portrayed}}</span></p>
+                    <p><span><b>Status:&nbsp; </b> {{personagem.status}}</span></p>
+
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="example-button-row">
+                        <button mat-raised-button>Like</button>
+                        <button mat-raised-button color="primary">Contratar o Iury</button>
+                        <button mat-raised-button color="accent">Share</button>
+                    </div>
+                </mat-card-actions>
+                <mat-card-footer></mat-card-footer>
+            </mat-card>
         </div>
     </div>
+</div>

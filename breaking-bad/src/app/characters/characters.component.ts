@@ -21,7 +21,7 @@ export class CharactersComponent implements OnInit {
     this.listar();
   }
 
-   listar() {
+  listar() {
     this.characterSvc.listar().subscribe(dados => this.allCharacters = dados)
   }
 

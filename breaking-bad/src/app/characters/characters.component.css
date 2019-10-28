@@ -2,3 +2,9 @@ img.mat-card-image {
     min-height: 374px;
     max-height: 374px;
     }
+
+@media (max-width: 480px) { 
+    .mat-card {
+        width: 123%;
+    }    
+}
