@@ -8,3 +8,9 @@ img.mat-card-image {
         width: 123%;
     }    
 }
+
+.mat-card {
+    max-height: 42em;
+    min-height: 42em;
+}
+
