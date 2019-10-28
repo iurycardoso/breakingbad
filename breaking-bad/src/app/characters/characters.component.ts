@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { CharactersApiService } from './shared/characters-api.service';
 
-import { Observable } from 'rxjs';
+
 
 
 @Component({
@@ -21,7 +20,7 @@ export class CharactersComponent implements OnInit {
     this.listar();
   }
 
-   listar() {
+  listar() {
     this.characterSvc.listar().subscribe(dados => this.allCharacters = dados)
   }
 
