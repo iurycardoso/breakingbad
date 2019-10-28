@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -15,12 +16,11 @@ import { CharactersComponent } from './characters/characters.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CharactersComponent
+    CharactersComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +35,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     HttpClientModule,
     FlexLayoutModule,
     MatCardModule,
-    MatFormFieldModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
