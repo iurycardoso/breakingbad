@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SurpresaComponent } from './surpresa/surpresa.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     NavbarComponent,
     CharactersComponent,
+    SurpresaComponent,
   ],
   imports: [
     BrowserModule,
